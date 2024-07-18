@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{{url_for('home')}}">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Topics Listing</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Topics Listing</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h3 class="mb-4">Popular Methods</h3>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-3 mx-auto">
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_Remote_design_team_re_urdx.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Burning In-situ</h5>
+
+                                            <p class="mb-0">TIn this method, the oil floating on the surface is ignited to burn it off. This in-situ burning of oil can effectively remove up to 98% of an oil spill, which is more than most other methods.<br> According to Obi et al. (2008), “The minimum concentration (thickness) of the slick on the water surface for any measurable effectiveness of in-situ burning is 3mm. This is because it would be tough (and even nearly impossible) to ignite a layer that is not thick enough.</p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-design rounded-pill ms-auto">4</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',fielname='images/topics/undraw_online_ad_re_ol62.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Using Dispersants</h5>
+
+                                            <p class="mb-0">When the spilt oil cannot be contained by using booms, the only option left is to accelerate the disintegration of oil. Dispersal agents, such as Corexit 9500, are chemicals that are sprayed upon the spill with the help of aircraft and boats, which aid the natural breakdown of oil components.
+
+                                                They allow the oil to chemically bond with water by increasing the surface area of each molecule. This ensures that the slick does not travel over the water’s surface and is easier to degrade by microbes</p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-advertising rounded-pill ms-auto">5</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_Podcast_audience_re_4i5q.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Hot Water and High-Pressure Washing</h5>
+
+                                            <p class="mb-0">This procedure is mainly used in situations where the oil is inaccessible to mechanical removal methods such as using booms and skimmers. It is used to dislodge the trapped and weathered oil from locations that are generally inaccessible to machinery.
+
+                                                Water heaters are used to heat water to around 170°C, then sprayed by hand with high-pressure wands or nozzles. The oil is thus flushed to the water surface, which can be collected with skimmers or sorbents.</p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-music rounded-pill ms-auto">6</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mb-0">
+                                    
+
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="{{url_for('methods')}}">1</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="{{url_for('methods1')}}">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="{{url_for('methods2')}}">3</a>
+                                    </li>
+                                    
+             
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+		{% endblock %}

@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{{url_for('home')}}">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Topics Listing</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Topics Listing</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h3 class="mb-4">Popular Methods</h3>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-3 mx-auto">
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_Remote_design_team_re_urdx.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Using OIl Booms </h5>
+
+                                            <p class="mb-0">The use of oil booms is a straightforward and popular method of controlling oil spills. Equipment called containment booms acts like a fence to prevent the oil from further spreading or floating away. Booms float on the water surface and have three parts – <br>  A ‘freeboard’ is the part that rises above the water surface, containing the oil and preventing it from splashing over the top
+                                                • A ‘skirt’ is placed below the surface and keeps the oil from being squeezed under the booms and escaping
+                                                • A kind of cable or chain that connects the parts to strengthen and stabilize the boom.
+                                                Connected sections of the boom are placed around the oil spill area until it is surrounded and contained.</p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-design rounded-pill ms-auto">1</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_online_ad_re_ol62.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Using Skimmers</h5>
+
+                                            <p class="mb-0">Once the oil has been confined by using oil booms, skimmers or oil scoops can be deployed onto boats to remove the contaminants from the water surface. Skimmers are machines specially designed to suck up the oil from the water surface like a vacuum cleaner. They are used to physically separate the oil from the water to be collected and processed for re-use.</p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-advertising rounded-pill ms-auto">2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_Podcast_audience_re_4i5q.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Using Sorbents</h5>
+
+                                            <p class="mb-0">Sorbents are materials that soak up liquids by either absorption (pulling in through pores) or adsorption (forming a layer on the surface). Both these properties make the process of clean-up much easier. Materials commonly used as oil sorbents are hay, peat moss, straw or vermiculite.</p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-music rounded-pill ms-auto">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mb-0">
+                                    
+
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="{{url_for('methods')}}">1</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="{{url_for('methods1')}}">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="{{url_for('methods2')}}">3</a>
+                                    </li>
+                                    
+             
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+{% endblock %}

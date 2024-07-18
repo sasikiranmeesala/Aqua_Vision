@@ -1,0 +1,15 @@
+names:
+- object
+- rainbow
+- sheen
+- truecolor
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: oil_spill-qbagr
+  url: https://universe.roboflow.com/objectdetectionfruits-moegm/oil_spill-qbagr/dataset/1
+  version: 1
+  workspace: objectdetectionfruits-moegm
+test: test/images
+train: train/images
+val: valid/images

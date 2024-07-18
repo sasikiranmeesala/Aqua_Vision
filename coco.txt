@@ -1,0 +1,4 @@
+object
+rainbow
+sheen
+truecolor

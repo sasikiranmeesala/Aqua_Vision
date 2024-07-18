@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+            
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 mb-5">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Web Design</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">OIL SPILL</h2>
+
+                            <div class="d-flex align-items-center mt-5">
+                                <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Read More</a>
+
+                                <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="topics-detail-block bg-white shadow-lg">
+                                <img src="{{url_for('static',filename='images/topics/undraw_Remote_design_team_re_urdx.png')}}" class="topics-detail-block-image img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 m-auto">
+                            <h3 class="mb-4">Introduction to oil spil</h3>
+
+                            <p>Oil spills: It refers to the release of oil in any water body accidentally either via an oil tanker, off shore drilling rig or by the underwater pipelines and wells. Oils spills have adverse effect on the aquatic ecosystem and are hazardous to marine life.</p>
+
+                                                       
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+        {% endblock %}

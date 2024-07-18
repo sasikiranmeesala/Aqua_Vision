@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{{url_for('home')}}">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Topics Listing</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Topics Listing</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h3 class="mb-4">Popular Methods</h3>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-3 mx-auto">
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_Remote_design_team_re_urdx.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Using Manual Labour</h5>
+
+                                            <p class="mb-0">As the name suggests, the method requires hand-held tools and manual labour to clean up the contaminants. It involves using manual means like hands, rakes, shovels etc., to clean the surface oil and oily debris and place them in special containers to be removed from the shoreline.
+
+                                                Sometimes, mechanized equipment may be employed for providing any additional help and reach out to any inaccessible areas</p>
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-design rounded-pill ms-auto">7</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_online_ad_re_ol62.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Bioremediation</h5>
+
+                                            <p class="mb-0">Bioremediation refers to the use of specific microorganisms to remove any toxic or harmful substances. For example, various bacteria, fungi, archaea, and algae degrade petroleum products by metabolizing and breaking them into simpler and non-toxic molecules (mostly fatty acids and carbon dioxide). Sometimes, reagents and fertilizers may be added to the area.
+                                                <br>These phosphorus-based and nitrogen-based fertilizers provide adequate nutrients for the microbes to grow and multiply quickly.
+
+                                                This process is generally not used when the spill has happened in the deep seas and is gradually implemented once the oil approaches the shoreline.
+                                            </p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-advertising rounded-pill ms-auto">8</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{url_for('static',filename='images/topics/undraw_Podcast_audience_re_4i5q.png')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2"> Chemical Stabilisation of oil by Elastomizers</h5>
+
+                                            <p class="mb-0">Right after an oil spill, the immediate concern is to prevent the oil from spreading and contaminating the adjacent areas. While mechanical methods like using oil booms effectively contain the oil, they have certain limitations to their use.
+
+                                                Experts have recently been using compounds like ‘Elastol’, which is basically poly iso-butylene (PIB) in a white powdered form, to confine oil spills. The compound gelatinizes or solidifies the oil on the water surface, thus preventing it from spreading or escaping. In addition, the gelatin is easy to retrieve, and this makes the process highly efficient.
+                                                
+                                                </p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-music rounded-pill ms-auto">9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mb-0">
+                                    
+
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="{{url_for('methods')}}">1</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="{{url_for('methods1')}}">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="{{url_for('methods2')}}">3</a>
+                                    </li>
+                                    
+             
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+		{% endblock %}
